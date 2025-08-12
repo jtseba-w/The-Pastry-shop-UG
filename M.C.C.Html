@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Pastry Shop UG - G.C.C</title>
+  <!-- All CSS files are now referenced from the css files/ directory -->
+  <link rel="stylesheet" href="css files/key.css" />
+  <link rel="stylesheet" href="css files/image-background.css" />
+  <link rel="stylesheet" href="css files/image-mover.css" />
+  <link rel="stylesheet" href="css files/footer.css" />
+  <link rel="stylesheet" href="css files/image_library.css" />
+
+  <!-- Bootstrap CSS for responsive design and buttons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Inline Styles -->
+  <style>
+    /* Set background color for the entire page */
+    html {
+      background: #ffd561 !important;
+    }
+
+    /* Hero section background image */
+    #section1 {
+      background-image: url("images/momentus celebration cakes/IMG_20230803_074945_544.webp");
+    }
+  </style>
+</head>
+
+<body class="content">
+  <!-- Top Bar -->
+    <div id="fakeLoader"></div>
+  <div class="topbar">
+    <!-- Hamburger menu button -->
+    <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Order Now link -->
+    <div id="order-now">
+      <a href="call.html" style="color: #000000; text-decoration: none; font-weight: bold;">order now</a>
+    </div>
+  </div>
+
+  <!-- Navigation Menu -->
+  <nav id="nav-menu" aria-hidden="true">
+    <!-- Empty link to maintain structure -->
+    <a href="#">.</a>
+    <a href="The-Pastry-Shop-UG.html" tabindex="-1">Home</a>
+    <a href="flavours.html" tabindex="-1">Flavours</a>
+    <a href="image_library.html" tabindex="-1">Image Library</a>
+    <a href="call.html" tabindex="-1">Order</a>
+  </nav>
+
+  <!-- Overlay for dimming background when menu is open -->
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+    <!-- Hero Section with title and navigation back to image library -->
+    <section id="section1" class="img-background">
+      <div class="container text-center mt-4">
+        <h1 id="title">Momentous Celebrations</h1>
+        <a href="image_library.html">
+          <button type="button" class="clear-button" id="order">&#8249;&#8249;&#8249;Image Library</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section title for image previews -->
+    <p class="title-with-line">click an image to preview</p>
+
+    <!-- Image Gallery Section -->
+    <section class="image-section">
+      <div class="gallery">
+        <!-- Gallery images -->
+        <span><img src="images/momentus celebration cakes/IMG_20220922_102724_931.webp" alt="" /></span>
+        <span><img src="images/momentus celebration cakes/20250804_142013 (1).webp" alt="" /></span>
+        <span><img src="images/momentus celebration cakes/20250608_141832.webp" alt="" /></span>
+        <span><img src="images/momentus celebration cakes/20250117_101719.webp" alt="" /></span>
+        <span><img src="images/momentus celebration cakes/IMG_20220630_064728_121.webp" alt="" /></span>
+        <span><img src="images/momentus celebration cakes/IMG_20230803_074945_544.webp" alt="" /></span>
+        <span><img src="images/momentus celebration cakes/IMG_20240319_110156_860.webp" alt="" /></span>
+        <span><img src="images/momentus celebration cakes/IMG_20240125_003541_785.webp" alt="" /></span>
+               
+
+
+      </div>
+
+      <!-- Lightbox for image preview -->
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox-buttons">
+          <!-- Download button -->
+          <a id="download-link" download>
+            <button class="download-btn">Download</button>
+          </a>
+          <!-- Close button -->
+          <button class="close-btn" id="close-btn">X</button>
+        </div>
+        <!-- Enlarged image display -->
+        <img id="lightbox-img" src="" alt="" />
+      </div>
+    </section>
+<p class="title-with-line">last updated 11/8/2025</p>
+    <!-- Footer Section -->
+    <section id="footer" class="lazy-load-section">
+      <h1><strong>Call now!</strong></h1>
+      <p>...Click the number</p>
+
+      <!-- Contact Numbers -->
+      <section id="footer-numbers">
+        <div class="contact-block">
+          <img src="images/MTN-Logo.webp" id="mtn" alt="MTN" class="contact-image" />
+          <button class="btn btn-dark">
+            <a href="tel:+256772591033" class="callLink">+256772591033</a>
+          </button>
+        </div>
+
+        <div class="contact-block">
+          <img src="images/airtal-bank-logo.webp" alt="Airtel" class="contact-image" />
+          <button class="btn btn-dark">
+            <a href="tel:+256753520500" class="callLink">+256753520500</a>
+          </button>
+        </div>
+      </section>
+
+      <!-- Logo and shop name -->
+      <div id="logos">
+        <img src="images/logo-white (3).webp" id="logo" alt="logo" />
+        <h3>The Pastry Shop</h3>
+      </div>
+
+      <!-- Social media icons -->
+      <section id="footer-icons">
+        <div>
+          <a href="https://www.tiktok.com/@thepastryshopuganda" target="_blank">
+            <img src="images/tiktok.webp" class="icons" alt="TikTok" />
+          </a>
+          <a href="https://wa.me/+256772591033" target="_blank">
+            <img src="images/whatsapp.webp" class="icons" alt="WhatsApp" />
+          </a>
+          <a href="https://www.instagram.com/the_pastry_shop_uganda/" target="_blank">
+            <img src="images/insta.webp" class="icons" alt="Instagram" />
+          </a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- JavaScript Files -->
+  <script src="js files/image_library.js"></script>
+  <script src="js files/key.js"></script>
+</body>
+</html>

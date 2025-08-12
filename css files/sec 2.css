@@ -1,0 +1,127 @@
+#sec_2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #ffc16f !important;
+  color: #221e13 !important;
+  font-family: "Varela Round", arial !important;
+  font-weight: 400;
+  min-height: 60vh;
+  z-index: 0;
+  margin: 0;
+  user-select: none;
+}
+
+#sec_2 h1 {
+  font-size: 4rem;
+  color: #221e13 !important;
+}
+
+#sec_2 p {
+  text-align: center;
+  color: #221e13 !important;
+}
+
+.swiper-container2 {
+  margin-top: 50px;
+  width: 90%;
+  max-width: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-track2 {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+}
+
+.card2 {
+  flex: 0 0 70%;
+  margin: 0 15px;
+  height: 75px;
+  background: #ffebd2 !important;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgb(0, 0, 0) !important;
+  font-size: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #221e13 !important;
+}
+
+.arrow2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #7f674877 !important;
+  border: none;
+  color: white !important;
+  font-size: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.arrow2:disabled {
+  background: rgba(141, 141, 141, 0.4) !important;
+  cursor: not-allowed;
+}
+
+.arrow-left2 {
+  left: 8px;
+}
+
+.arrow-right2 {
+  right: 8px;
+}
+
+
+.dots2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.dot2 {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff0dd !important;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot2.active2 {
+  background: #ffae44 !important;
+}
+
+.label2 {
+  margin-top: 10px;
+  font-size: 2.1rem;
+  font-weight: 600;
+  min-height: 24px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  margin-bottom: 100px;
+  color: #221e13 !important;
+}
+
+.label2.show2 {
+  opacity: 1;
+  transform: translateY(0);
+  text-wrap-style: wrap;
+}

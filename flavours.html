@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Pastry Shop UG - Flavours</title>
+  <link href="css files/sec4.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css files/flavours.css" />
+  <link href="css files/key.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css files/image-mover.css" />
+  <link rel="stylesheet" href="css files/footer.css">
+  <title>Flavours</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+ 
+  <style>
+    body {
+      font-family: "Delius Swash Caps", cursive;
+        background-color: #ffd561!important;
+    }
+
+
+  </style>
+</head>
+
+  <body>
+  <div id="preloader"></div>
+   <div class="topbar">
+  <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+    <span></span>
+    <span></span>
+    <span></span>
+    
+  </div>
+  <div id="order-now" >
+    <a href="call.html" style="color: #000000; text-decoration: none; font-weight: bold;">
+      order now
+    </a>
+  </div> 
+</div>
+  <nav id="nav-menu" aria-hidden="true">
+
+    <a href="">.</a>
+    <a href="The-Pastry-Shop-UG.html" tabindex="-1">Home</a>
+    <a href="flavours.html" tabindex="-1">Flavours</a>
+    <a href="image_library.html" tabindex="-1">Image Library</a>
+    <a href="call.html" tabindex="-1">Order</a>
+    
+  </nav>
+  <div class="overlay" id="overlay"></div>
+<main>
+
+
+  <div id="pageContent" style="display: none;">
+
+  <div >
+   <section class="moving-cards " id="fl" >
+    <div class="card-wrapper">
+      <div class="moving-cards-text">
+        <h3 class="cursive">Flavours</h3>
+        <a  href="The-Pastry-Shop-UG.html" class="btn">&#8249;&#8249;&#8249;Home page</a>
+      </div>
+
+  <div class="moving-images">
+        <div class="image-mover scroll-up">
+          <div class="inner-image-mover">
+            <img src="images/Vanilla.webp" />
+            <img src="images/bubblegum.webp" />
+          </div>
+          <div class="inner-image-mover">
+            <img src="images/Vanilla.webp" />
+            <img src="images/bubblegum.webp" />
+          </div>
+        </div>
+      </div>
+
+    <div class="moving-images center3">
+        <div class="image-mover scroll-down">
+         <div class="inner-image-mover">
+            <img src="images/Chocolate.webp" />
+            <img src="images/Strawberry.webp" />
+          </div>
+           <div class="inner-image-mover">
+            <img src="images/Chocolate.webp" />
+            <img src="images/Strawberry.webp" />
+          </div>
+        </div>
+      </div>
+
+ <div class="moving-images">
+        <div class="image-mover scroll-up">
+          <div class="inner-image-mover">
+            <img src="images/coconut.webp" />
+            <img src="images/Orange.webp" />
+          </div>
+           <div class="inner-image-mover">
+            <img src="images/coconut.webp" />
+            <img src="images/Orange.webp" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="title-with-line">Sweet & Simple</div>
+  <section class="order-grid" >
+    <div class="order-card">
+      <img src="images/chocolate.webp" alt="Chocolate 1" />
+      <div class="order-text">
+        <h3 class="caption">Chocolate</h3>
+        <p class="description">Rich cake made with chocolate flavouring.</p>
+        <button class="order-button" onclick="orderWithFlavour('Chocolate')">Order Now</button>
+
+      </div>
+    </div>
+    <div class="order-card">
+      <img src="images/Vanilla.webp" alt="Chocolate 2" />
+      <div class="order-text">
+        <h3 class="caption">Vanilla</h3>
+        <p class="description"> Light, soft cake with a sweet vanilla flavour.</p>
+        <button class="order-button" onclick="orderWithFlavour('Vanilla')">Order Now</button>
+
+      </div>
+    </div>
+    <div class="order-card">
+      <img src="images/Strawberry.webp" alt="Chocolate 3" />
+      <div class="order-text">
+        <h3 class="caption">Strawberry</h3>
+        <p class="description">Pink cake with artificial strawberry flavour.</p>
+        <button class="order-button" onclick="orderWithFlavour('Strawberry')">Order Now</button>
+
+      </div>
+    </div>
+   
+  </section>
+
+<div class="title-with-line">Rich & indulgeful</div>
+    <section class="order-grid" >
+    <div class="order-card">
+      <img src="images/Red-velvet.webp" alt="Chocolate 1" />
+      <div class="order-text">
+        <h3 class="caption">Red-velvet</h3>
+        <p class="description"> Soft red cake with a light cocoa flavour.</p>
+        <button class="order-button" onclick="orderWithFlavour('Red-Velvet')">Order Now</button>
+
+      </div>
+    </div>
+    <div class="order-card">
+      <img src="images/fruit-cake.webp" alt="Chocolate 2" />
+      <div class="order-text">
+        <h3 class="caption">Fruit Cake</h3>
+        <p class="description">Dense cake with raisins and mild cinamon.</p>
+        <button class="order-button" onclick="orderWithFlavour('Fruit Cake')">Order Now</button>
+
+      </div>
+    </div>
+    <div class="order-card">
+      <img src="images/Bubblegum.webp" alt="Chocolate 3" />
+      <div class="order-text">
+        <h3 class="caption">bubblegum</h3>
+        <p class="description"> Colourful cake with a sweet bubblegum taste.</p>
+        <button class="order-button" onclick="orderWithFlavour('Bubblegum')">Order Now</button>
+
+      </div>
+    </div>
+  </section>
+  <div class="title-with-line">Fruity & Fresh</div>
+  <section class="order-grid" >
+    <div class="order-card">
+      <img src="images/Orange.webp" alt="Chocolate 1" />
+      <div class="order-text">
+        <h3 class="caption">Orange</h3>
+        <p class="description">Sweet cake with a mild orange taste.</p>
+        <button class="order-button" onclick="orderWithFlavour('Orange')">Order Now</button>
+
+      </div>
+    </div>
+    
+    <div class="order-card">
+      <img src="images/coconut.webp" alt="Chocolate 3" />
+      <div class="order-text">
+        <h3 class="caption">Coconut</h3>
+        <p class="description"> Buttery cake with smooth coconut flavouring.</p>
+    <button class="order-button" onclick="orderWithFlavour('Coconut')">Order Now</button>
+
+      </div>
+    </div>
+    <div class="order-card">
+      <img src="images/Blueberry.webp" alt="Chocolate 4" />
+      <div class="order-text">
+        <h3 class="caption">Blueberry</h3>
+        <p class="description">Purple cake with a mild blueberry flavour.<p>
+      <button class="order-button" onclick="orderWithFlavour('Blueberry')">Order Now</button>
+
+      </div>
+    </div>
+      <div class="order-card">
+      <img src="images/Lemon.webp" alt="Chocolate 4" />
+      <div class="order-text">
+        <h3 class="caption">lemon</h3>
+        <p class="description"> Light, sweet cake with a lemon essence.</p>
+       <button class="order-button" onclick="orderWithFlavour('Lemon')">Order Now</button>
+
+      </div>
+    </div>
+     <div class="order-card">
+      <img src="images/Pineapple.webp" alt="Chocolate 4" />
+      <div class="order-text">
+        <h3 class="caption">Pineapple</h3>
+        <p class="description">Yellow cake with pineapple-style flavouring.</p>
+      <button class="order-button" onclick="orderWithFlavour('Pineapple')">Order Now</button>
+
+      </div>
+    </div>
+    <div class="order-card">
+      <img src="images/mint.webp" alt="Chocolate 2" />
+      <div class="order-text">
+        <h3 class="caption">Mint</h3>
+        <p class="description">Flavoured with cool mint, great for a fresh taste.</p>
+        <button class="order-button" onclick="orderWithFlavour('Mint')">Order Now</button>
+
+      </div>
+    </div>
+    </div>
+  </div>
+  </section>
+   <section id="footer"  class="lazy-load-section">
+    <h1><strong>Call now!</strong></h1>
+    <p>...Click the number</p>
+    <section id="footer-numbers">
+      <div class="contact-block">
+        <img src="images/MTN-Logo.webp" id="mtn" alt="MTN" class="contact-image" />
+        <button class="btn btn-dark">
+          <a href="tel:+256772591033" class="callLink">+256772591033</a>
+        </button>
+      </div>
+
+      <div class="contact-block">
+        <img src="images/airtal-bank-logo.webp" alt="Airtel" class="contact-image" />
+        <button class="btn btn-dark">
+          <a href="tel:+256753520500" class="callLink">+256753520500</a>
+        </button>
+      </div>
+     
+    </section>
+
+    <div id="logos">
+      <img src="images/logo-white (3).webp" id="logo" alt="logo" />
+      <h3>The Pastry Shop</h3>
+    </div>
+
+    <section id="footer-icons">
+      <div>
+        <a href="https://www.tiktok.com/@thepastryshopuganda" target="_blank"><img src="images/tiktok.webp" class="icons" alt="TikTok" /></a>
+        <a href="https://wa.me/+256772591033" target="_blank"><img src="images/whatsapp.webp" class="icons" alt="WhatsApp" /></a>
+        <a href="https://www.instagram.com/the_pastry_shop_uganda/" target="_blank"><img src="images/insta.webp" class="icons" alt="Instagram" /></a>
+      </div>
+    </section>
+  </section>
+  </main>
+  <script src="js files/key.js"></script>
+  <script>
+  function orderWithFlavour(flavour) {
+    // Encode the flavour to be URL-safe
+    const encodedFlavour = encodeURIComponent(flavour);
+    // Redirect to the order form page with the flavour as a query parameter
+    window.location.href = `call.html?flavour=${encodedFlavour}`;
+  }
+  window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  const content = document.getElementById("pageContent");
+
+  // Remove the preloader
+  preloader.style.display = "none";
+
+  // Show the real content
+  content.style.display = "block";
+  content.classList.add("fade-in");
+});
+
+window.addEventListener("load", () => {
+  document.body.classList.remove("no-animate");
+});
+
+</script>
+
+</body>
+</html>

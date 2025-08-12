@@ -1,0 +1,140 @@
+.moving-cards {
+  background-color: #ff8e61;
+  font-family: "Delius Swash Caps", cursive;
+}
+
+.card-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  height: 75vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Gradient overlay: transparent edges, dark center */
+.card-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.158);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.moving-cards-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 4;
+  user-select: none;
+  width: 100vw;
+  overflow: visible;
+}
+
+.moving-cards h1 {
+  pointer-events: none;
+  font-size: 2.7rem;
+  margin: 0 0 0.5em 0;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+.moving-cards-text a,.clear-button {
+  font-family: "Varela Round", arial !important;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.247);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+.clear-button:hover{
+  background-color:#ffffff75;
+}
+.moving-cards-text a:hover {
+  background-color: #ffffff75;
+}
+/* Containers */
+.moving-images {
+  width: fit-content;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+/* Scroll wrapper */
+.image-mover {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-image-mover {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding-bottom: 20px;
+}
+
+/* IMAGE SIZING — much bigger on desktop */
+.image-mover img {
+  width: 400px;        /* big on desktop */
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Make them slightly smaller but still large on mobile */
+@media (max-width: 768px) {
+  .image-mover img {
+    width: 300px;      /* big but fits mobile */
+  }
+}
+
+/* Scroll Up */
+.scroll-up {
+  animation: scrollUp3 20s linear infinite;
+}
+
+/* Scroll Down (center) */
+.scroll-down {
+  animation: scrollDown3 20s linear infinite;
+}
+
+@keyframes scrollUp3 {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollDown3 {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.only-samsung {
+  display: none; /* hidden by default */
+}
+html.samsung .only-samsung {
+  display: block; /* shown only on Samsung Internet */
+}

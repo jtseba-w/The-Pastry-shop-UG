@@ -1,0 +1,141 @@
+
+    .section-title {
+      font-size: 2.2rem;
+      font-family: "Meow Script", cursive !important;
+      text-align: center;
+      color: #a0522d;
+      margin-bottom: 15px;
+    }
+
+    .order-grid {
+      background: #ffd561;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      padding: 0 10px;
+    }
+
+    .order-card {
+      display: flex;
+      align-items: flex-start;
+      max-width: 500px;
+      border-radius: 10px;
+      padding: 15px 20px;
+    }
+
+    .order-card img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+      margin-right: 20px;
+    }
+
+    .order-text {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .caption {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 15px;
+      word-wrap: break-word;
+    }
+
+    .order-button {
+padding: 7px;
+      font-size: 1rem;
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: fit-content;
+      align-self: flex-start;
+           font-family: "Varela Round", arial;
+      font-size: 1.2rem;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      border: 1px solid rgb(0, 0, 0);
+      background: rgb(255, 231, 165);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      z-index: 10;
+    }
+
+    .order-button:hover {
+      background-color: #ffc31d;
+    }
+
+    @media (max-width: 700px) {
+      .flavours-section {
+        margin: 30px auto 15px;
+        padding: 0 10px;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+
+      .order-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .order-card {
+        padding: 12px 15px;
+      }
+
+      .order-card img {
+        width: 120px;
+        height: 120px;
+        margin-right: 15px;
+      }
+
+      .caption {
+        font-size: 1.1rem;
+        margin-bottom: 6px;
+      }
+
+      .description {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+      }
+
+      .order-button {
+        padding: 9px 16px;
+        font-size: 0.95rem;
+      }
+    }
+    /* Preloader covers everything initially */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: white;
+  z-index: 9999;
+}
+
+/* Optional: Fade effect when showing content */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,68 @@
+
+.img-background{
+  position: relative; /* Establish a positioning context */
+  text-align: center;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family:"meow script", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  overflow: hidden; /* Ensure the overlay does not spill outside the section */
+}
+.img-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.363); /* Semi-transparent overlay */
+  z-index: 1; /* Ensure the overlay is below the text but above the background */
+}
+.img-background button{
+  font-family: "Varela Round", arial;
+  z-index: 100;
+  margin-top: 10px;
+}
+.img-background h1 {
+  position: relative;
+  z-index: 4; /* Ensure text is above the overlay */
+  font-size: 5em;
+  margin: 0;
+  animation: popUp 1s ease-out 2s forwards; /* 0.5s delay */
+  opacity: 0; /* Hidden until animation plays */
+}
+#title {
+  font-size: 6em;
+  text-align: center;
+  margin-top: 20px;
+  z-index: 4; /* Ensure title is above the overlay */
+}
+#section1 h1{
+  font-size: 5em;
+  text-align: center;
+  margin-top: 20px;
+  animation: popUp 1s ease-out .5s forwards; /* 1s delay (starts after title) */
+}
+#section1 button{
+  animation: popUp 2s ease-out .5s forwards; /* 1s delay (starts after title) */
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+@keyframes popUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

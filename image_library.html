@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Library</title>
+
+    <link rel="stylesheet" href="css files/sec7.css">
+      <link href="css files/key.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css files/image-mover.css">
+
+  <link rel="stylesheet" href="css files/footer.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+ 
+</head>
+<style>
+    
+    
+#Cg{
+    font-family: "Meow Script", 'cursive';
+    margin-bottom: 30px;
+    font-size: 6em;
+}
+   body, html {
+      height: 100%;
+      margin: 0;
+    background: #ffc16f !important;
+
+    }
+
+    .center-viewport {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .image-card {
+      position: relative;
+      width: 320px;
+      height: 200px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Overlay text */
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      .image-card {
+        width: 260px;
+        height: 165px;
+      }
+    }
+    .card-wrapper::before{
+        background-color: rgba(0, 0, 0, 0.507);
+    }
+    a :hover{
+      border: 3px solid rgba(255, 255, 255, 0.4);
+
+    }
+</style>
+<link rel="preload" as="image" href="images/grand celebration cakes/20241207_131512.webp" />
+
+<link rel="preload" as="image" href="images/custom cakes/IMG_20220306_220305_019.webp" />
+<link rel="preload" as="image" href="images/cartoon inspired cakes/IMG_20240723_082127_941.webp" />
+<link rel="preload" as="image" href="images/regular cakes/20241110_070918.webp" />
+<link rel="preload" as="image" href="images/momentus celebration cakes/20250117_101719.webp" />
+<link rel="preload" as="image" href="images/grand celebration cakes/IMG_20230126_213310_459.webp" />
+
+<body>
+ <div id="fakeLoader"></div>
+      <div class="topbar">
+  <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+    <span></span>
+    <span></span>
+    <span></span>
+    
+  </div>
+  <div id="order-now" >
+    <a href="call.html" style="color: #000000; text-decoration: none; font-weight: bold;">
+      order now
+    </a>
+  </div>
+  
+</div>
+  <nav id="nav-menu" aria-hidden="true">
+
+    <a href="">.</a>
+    <a href="The-Pastry-Shop-UG.html" tabindex="-1">Home</a>
+        <a href="flavours.html" tabindex="-1">Flavours</a>
+            <a href="image_library.html" tabindex="-1">Image Library</a>
+    <a href="call.html" tabindex="-1">Order</a>
+
+
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+  
+   <section class="moving-cards " id="fl" >
+    <div class="card-wrapper">
+      <div class="moving-cards-text">
+        <h3 class="cursive">Image Library</h3>
+        <a  href="The-Pastry-Shop-UG.html">&#8249;&#8249;&#8249;Home page</a>
+      </div>
+
+  <div class="moving-images">
+        <div class="image-mover scroll-up">
+          <div class="inner-image-mover">
+            <img src="images/grand celebration cakes/IMG_20230126_213310_459.webp" loading="eager" />
+            <img src="images/regular cakes/20241110_070918.webp" loading="eager"/>
+          </div>
+          <div class="inner-image-mover">
+            <img src="images/grand celebration cakes/IMG_20230126_213310_459.webp" />
+            <img src="images/regular cakes/20241110_070918.webp" />
+          </div>
+        </div>
+      </div>
+
+    <div class="moving-images center3">
+        <div class="image-mover scroll-down">
+         <div class="inner-image-mover">
+             <img src="images/grand celebration cakes/20241207_131512.webp" loading="eager"/>
+            <img src="images/custom cakes/IMG_20220306_220305_019.webp" loading="eager" />
+          </div>
+           <div class="inner-image-mover">
+            <img src="images/grand celebration cakes/20241207_131512.webp" />
+            <img src="images/custom cakes/IMG_20220306_220305_019.webp" />
+          </div>
+        </div>
+      </div>
+
+ <div class="moving-images">
+        <div class="image-mover scroll-up">
+          <div class="inner-image-mover">
+            <img src="images/momentus celebration cakes/20250117_101719.webp" loading="eager" />
+            <img src="images/cartoon inspired cakes/IMG_20240723_082127_941.webp" loading="eager"/>
+          </div>
+           <div class="inner-image-mover">
+            <img src="images/momentus celebration cakes/20250117_101719.webp" />
+            <img src="images/cartoon inspired cakes/IMG_20240723_082127_941.webp"  />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <p class="title-with-line">click an image</p>
+  <span>
+  <section style="min-height: 50vh;">
+    <div class="center-viewport" style="margin-top: 20px;">
+    <div class="image-row">
+        <a href="G.C.C.html">
+      <div class="image-card">
+        <img src="images/20250810_230855.webp" alt="Image 1">
+        <div class="caption">Grand Celebration cakes</div>
+      </div>
+      </a>
+      <a href="S.C.html">
+      <div class="image-card">
+        <img src="images/20250810_231256.webp" alt="Image 2">
+        <div class="caption">Sensational Cakes</div>
+      </div>
+      </a>
+        <a href="C.I.C.html">
+      <div class="image-card">
+        <img src="images/20250810_231537.webp" alt="Image 3">
+        <div class="caption">Chararcter inspired cakes</div>
+      </div>
+        </a>
+         <a href="M.C.C.Html">
+      <div class="image-card">
+        <img src="images/20250810_231127.webp" alt="Image 3">
+        <div class="caption">Momentous Celebtatory Cakes</div>
+      </div>
+        </a>
+        <a href="C.C.html">
+      <div class="image-card">
+        <img src="images/20250810_231415.webp" alt="Image 3">
+        <div class="caption">Custom Cakes</div>
+      </div>
+        </a>
+       
+        
+    </div>
+  </div>
+</section>
+ <p class="title-with-line">last updated 11/8/2025</p>
+<section id="footer"  class="lazy-load-section">
+    <h1><strong>Call now!</strong></h1>
+    <p>...Click the number</p>
+    <section id="footer-numbers">
+      <div class="contact-block">
+        <img src="images/MTN-Logo.webp" id="mtn" alt="MTN" class="contact-image" />
+        <button class="btn btn-dark">
+          <a href="tel:+256772591033" class="callLink">+256772591033</a>
+        </button>
+      </div>
+
+      <div class="contact-block">
+        <img src="images/airtal-bank-logo.webp" alt="Airtel" class="contact-image" />
+        <button class="btn btn-dark">
+          <a href="tel:+256753520500" class="callLink">+256753520500</a>
+        </button>
+      </div>
+     
+    </section>
+
+    <div id="logos">
+      <img src="images/logo-white (3).webp" id="logo" alt="logo" />
+      <h3>The Pastry Shop</h3>
+    </div>
+
+    <section id="footer-icons">
+      <div>
+        <a href="https://www.tiktok.com/@thepastryshopuganda" target="_blank"><img src="images/tiktok.webp" class="icons" alt="TikTok" /></a>
+        <a href="https://wa.me/+256772591033" target="_blank"><img src="images/whatsapp.webp" class="icons" alt="WhatsApp" /></a>
+        <a href="https://www.instagram.com/the_pastry_shop_uganda/" target="_blank"><img src="images/insta.webp" class="icons" alt="Instagram" /></a>
+      </div>
+    </section>
+  </section>
+ 
+</main>
+
+  <script src="js files/key.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+/*all fonts (Valera round, meow script,*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Dancing+Script:wght@400..700&family=Delius+Swash+Caps&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Meow+Script&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  color-scheme: light !important;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background:  #ffc16f !important;
+  padding: 0;
+  margin: 0;
+  color-scheme: light !important;
+}
+@media (prefers-color-scheme: dark) {/* attempt to cancel forced dark mode styles (rarely works 💔) */
+  html {
+    filter: none !important;
+  }
+}
+
+.fullscreen {
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+
+
+/* fake loader made to give the page some time to load images*/
+#fakeLoader {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ffd561 !important;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+#fakeLoader::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ffffff;
+  border-top: 4px solid #b18c27;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/*navigation menu at the top*/
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #ff8e5a;
+  padding: 12px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  width: 35px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #18150d;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(50deg) translate(7px, 7px);
+}
+.hamburger.active span:nth-child(2) {
+  translate: -1000%;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-50deg) translate(7px, -7px);
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  padding: 5px 0 10px;
+  width: 100vw;
+  background: #ffae44;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+  z-index: 1120;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #000;
+  font-family: "Varela Round", arial;
+  text-align: left;
+}
+
+nav.show {
+  transform: translateX(0);
+  color: #18150d;
+}
+
+nav a {
+  color: #18150d;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  background: #ffd68a;
+}
+
+
+
+main {
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+  position: relative;
+  z-index: 1;
+  color-scheme: light !important;
+}
+
+@media (min-width: 600px) {
+  nav.show + main {
+    margin-left: 220px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.438);
+  z-index: 1115;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#order-now {
+  margin-left: 40vw;
+  font-family: "Varela Round", sans-serif;
+  color: #18150d;
+  text-decoration: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+#order-now:hover {
+  background-color: #3a3a3a59 !important;
+  cursor: grab;
+}
+
+#darkModeWarning {
+  margin-top: 50px;
+  display: none;
+  height: 5px;
+  width: 100vw;
+  position: absolute;
+  z-index: 10000;
+
+  color: black;
+  padding: 1em;
+  text-align: center;
+  font-family: sans-serif;
+  z-index: 10;
+}
+
+.cursive {
+  font-family: "Meow Script", cursive;
+  font-size: 6em;
+  margin: 0;
+  font-weight: normal;
+}
+body .title-with-line {
+  text-align: center;
+  font-family: "Delius Swash Caps", cursive;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.title-with-line::after {
+  content: "";
+  display: block;
+  margin: 0.2em auto 0 auto;
+  width: 60%;
+  height: 1px;
+  background: #4b3119;
+  border-radius: 2px;
+}
+
+body {
+
+  opacity: 0;
+  animation: fadeInPage 1.5s ease forwards;
+}
+
+@keyframes fadeInPage {
+  to {
+    opacity: 1;
+  }
+}
+body .title-with-line {
+  text-align: center;
+  font-family: "Delius Swash Caps", cursive;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.title-with-line::after {
+  content: "";
+  display: block;
+  margin: 0.2em auto 0 auto;
+  width: 60%;
+  height: 1px;
+  background: #4b3119;
+  border-radius: 2px;
+}
+.only-samsung {
+  display: none; /* hidden by default */
+}
+html.samsung .only-samsung {
+  display: block; /* shown only on Samsung Internet */
+}

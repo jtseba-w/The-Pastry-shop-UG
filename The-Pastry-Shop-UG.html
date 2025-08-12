@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Pastry Shop</title>
+  <!--icon for the site-->
+  <link rel="icon" type="image/webp" href="images/logo-white (3).webp" />
+
+  <!-- Section Styles -->
+  <!-- Tag: css files/ -->
+  <link rel="stylesheet" href="css files/sec 1.css" />
+  <link rel="stylesheet" href="css files/sec 2.css?v=1.0.0" />
+  <link rel="stylesheet" href="css files/image-mover.css" />
+  <link rel="stylesheet" href="css files/sec4.css?v=1.0.0" />
+  <link rel="stylesheet" href="css files/sec5.css?v=1.0.0" />
+  <link rel="stylesheet" href="css files/sec6.css?v=1.0.0" />
+  <link rel="stylesheet" href="css files/sec7.css?v=1.0.0" />
+  <link rel="stylesheet" href="css files/sec8.1.css?v=1.0.0" />
+  <link rel="stylesheet" href="css files/sec8.2.css?v=1.0.0" />
+  <link rel="stylesheet" href="css files/footer.css" />
+  <link rel="stylesheet" href="css files/key.css?v=1.0.0" />
+  <link rel="stylesheet" href="css files/animated-underline.css" />
+  <link rel="stylesheet" href="css files/image-background.css" />
+
+
+  <!-- Cache Control -->
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  
+
+  <!-- Preload Assets -->
+  <link rel="preload" as="image" href="images/background cake #1.webp" />
+  <link rel="preload" as="video" href="images/wCake.webm" />
+  <link rel="preload" as="image" href="images/Chocolate.webp" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+   
+    #section1{
+  background-image: url("images/background-cake-A.webp");
+}
+  </style>
+</head>
+
+<body>
+  <div id="darkModeWarning" >
+    ⚠️ Your browser may force dark mode ,which drastically changes how this site looks.<br>
+    Please re-eopen this page in another browser.
+</div>
+  <!-- Fake loading screen -->
+  <div id="fakeLoader"></div>
+  
+  <div class="topbar">
+  <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+    <span></span>
+    <span></span>
+    <span></span>
+    
+  </div>
+  <div id="order-now" >
+    <a href="call.html" style="color: #000000; text-decoration: none; font-weight: bold;" >
+      order now
+    </a>
+  </div> 
+</div>
+  <nav id="nav-menu" aria-hidden="true">
+
+    <a href="">.</a>
+    <a href="The-Pastry-Shop-UG.html" tabindex="-1">Home</a>
+    <a href="flavours.html" tabindex="-1">Flavours</a>
+    <a href="image_library.html" tabindex="-1">Image Library</a>
+    <a href="call.html" tabindex="-1">Order</a>
+    
+  </nav>
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+  <!-- Section 1 -->
+  <section id="section1"  class="lazy-load-section img-background"  id="my-section">
+    <div class="container text-center mt-4">
+
+      <h1 id="title"> The Pastry Shop! </h1>
+
+      <a href="call.html">
+      <button type="button" class="btn btn-dark" id="order">Order Now</button>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section id="sec_2">
+    <h1 class="animated-underline">Sizes</h1>
+    <div class="info-container">starting at 100,000 ugx</div>
+    
+    <div class="swiper-container2">
+      <button class="arrow2 arrow-left2" id="arrowLeft2" aria-label="Previous card" disabled>&#8249;</button>
+      <div class="swiper-track2" id="swiperTrack2">
+        <div class="card2">1.5 kgs</div>
+        <div class="card2">2 kgs</div>
+        <div class="card2">3 kgs</div>
+        <div class="card2">4 kgs</div>
+        <div class="card2">5 kgs</div>
+      </div>
+      <button class="arrow2 arrow-right2" id="arrowRight2" aria-label="Next card">&#8250;</button>
+    </div>
+    <div class="dots2" id="dotsContainer2"></div>
+    <div class="label2" id="cardLabel2"></div>
+    <p>Fruit cakes of 1.5 kilograms will cost <strong>150,000 Ugx</strong></p>
+    <script>
+      const track2 = document.getElementById('swiperTrack2');
+      const cards2 = document.querySelectorAll('.card2');
+      const arrowLeft2 = document.getElementById('arrowLeft2');
+      const arrowRight2 = document.getElementById('arrowRight2');
+      const dotsContainer2 = document.getElementById('dotsContainer2');
+      const cardLabel2 = document.getElementById('cardLabel2');
+      const labels2 = ["100,000 Ugx", "140,000 Ugx", "210,000 Ugx", "280,000 Ugx", "350,000 Ugx"];
+    </script>
+    <script src="js files/sec2.js"></script>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="moving-cards">
+    <div class="card-wrapper">
+      <div class="moving-cards-text">
+        <h1>Dreamy Delights</h1>
+        <a  href="flavours.html" >explore flavours &#8250;&#8250;&#8250;</a>
+      </div>
+
+
+      <div class="moving-images">
+        <div class="image-mover scroll-up">
+          <div class="inner-image-mover">
+            <img src="images/Bubblegum.webp" />
+
+            <img src="images/Red-velvet.webp" />
+          </div>
+          <div class="inner-image-mover">
+            <img src="images/Bubblegum.webp" />
+
+            <img src="images/Red-velvet.webp" />
+          </div>
+        </div>
+      </div>
+
+      <div class="moving-images center3">
+        <div class="image-mover scroll-down">
+          <div class="inner-image-mover">
+            <img src="images/coconut.webp" />
+            <img src="images/Orange.webp" />
+          </div>
+          <div class="inner-image-mover">
+            <img src="images/coconut.webp" />
+            <img src="images/Orange.webp"  />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section id="sec4">
+  <h1 id="h14">Icing</h1>
+  <p id="p4">Available in all colours</p>
+
+  <div class="image-caption-section4">
+    <div class="image-block4">
+      <img src="images/regular cakes/20250427_080418.webp" alt="Whipped Cream 1">
+      <div class="caption4">
+        <h2>Whipped Cream</h2>
+        <p>A smooth creamy topping made from whipped dairy</p>
+      </div>
+    </div>
+
+    <div class="image-block4 twist4">
+      <img src="images/regular cakes/20241110_070918.webp" alt="Fondant">
+      <div class="caption4">
+        <h2>Fondant</h2>
+        <p>Hard and sturdy icing, easy to mold and sculpt</p>
+      </div>
+    </div>
+
+    <div class="image-block4">
+      <img src="images/regular cakes/IMG_20220210_190859_192.webp" alt="Buttercream">
+      <div class="caption4">
+        <h2>Buttercream</h2>
+        <p>Soft and delicious. Perfect for piping and spreading</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Section 7: Video -->
+  <section id="video-bg-section" class="video-bg-section7">
+    <video
+      id="backgroundVideo7"
+      class="video7"
+      playsinline
+      muted
+      autoplay
+      preload="auto"
+    >
+      <source src="images/wCake.webm" type="video/webm" />
+    </video>
+
+    <div class="overlay7"></div>
+
+    <div class="text-container7">
+      <div class="caption7">Custom Creations</div>
+      <a class="clear-button" href="image_library.html" >Explore Images &#8250;&#8250;&#8250;</a>
+    </div>
+  </section>
+  <script src="js files/sec7.js"></script>
+
+  <!-- Section 8.2 -->
+  <section id="sec82">
+    <h1><strong>Design</strong></h1>
+    <p>Ask yourself...</p>
+    <div class="swiper-container82">
+      <button class="arrow82 arrow-left82" id="arrowLeft82">&#8249;</button>
+      <div class="swiper-track82" id="swiperTrack82">
+        <div class="swiper-card82"><div class="card82">What date and time will you pick up your cake?</div></div>
+        <div class="swiper-card82"><div class="card82">What are your preferred designs?</div></div>
+        <div class="swiper-card82"><div class="card82">What are your preferred colours?</div></div>
+        <div class="swiper-card82"><div class="card82">What words would you like on the cake?</div></div>
+        <div class="swiper-card82"><div class="card82">What add-ons might you want on the cake?</div></div>
+      </div>
+      <button class="arrow82 arrow-right82" id="arrowRight82">&#8250;</button>
+    </div>
+    <div class="dots82" id="dots82"></div>
+    <script src="js files/sec8.2.js"></script>
+  </section>
+
+  <!-- Section 8.1 -->
+  <section id="sec81">
+    <h1>Add-ons</h1>
+    <div class="swiper-container81">
+      <button class="arrow81 arrow-left81" id="arrowLeft81">&#8249;</button>
+      <div class="swiper-track81" id="swiperTrack81">
+        <div class="swiper-card81"><img src="images/edible-paper.webp" alt="Delicious Cake" /></div>
+        <div class="swiper-card81"><img src="images/topper.webp" alt="Tasty Cookies" /></div>
+        <div class="swiper-card81"><img src="images/20250811_225418.webp" alt="Custom add-on" /></div>
+      </div>
+      <button class="arrow81 arrow-right81" id="arrowRight81">&#8250;</button>
+    </div>
+    <div class="dots81" id="dots81"></div>
+    <div class="title-container81" id="titleContainer81"></div>
+    <div class="desc-container81" id="descContainer81"></div>
+    <script src="js files/sec8.1.js"></script>
+  </section>
+
+  <!-- footer -->
+  <section id="footer"  class="lazy-load-section">
+    <h1><strong>Call now!</strong></h1>
+    <p>...Click the number</p>
+    <section id="footer-numbers">
+      <div class="contact-block">
+        <img src="images/MTN-Logo.webp" id="mtn" alt="MTN" class="contact-image" />
+        <button class="btn btn-dark">
+          <a href="tel:+256772591033" class="callLink">+256772591033</a>
+        </button>
+      </div>
+
+      <div class="contact-block">
+        <img src="images/airtal-bank-logo.webp" alt="Airtel" class="contact-image" />
+        <button class="btn btn-dark">
+          <a href="tel:+256753520500" class="callLink">+256753520500</a>
+        </button>
+      </div>
+     
+    </section>
+
+    <div id="logos">
+      <img src="images/logo-white (3).webp" id="logo" alt="logo" />
+      <h3>The Pastry Shop</h3>
+    </div>
+
+    <section id="footer-icons">
+      <div>
+        <a href="https://www.tiktok.com/@thepastryshopuganda" target="_blank"><img src="images/tiktok.webp" class="icons" alt="TikTok" /></a>
+        <a href="https://wa.me/+256772591033" target="_blank"><img src="images/whatsapp.webp" class="icons" alt="WhatsApp" /></a>
+        <a href="https://www.instagram.com/the_pastry_shop_uganda/" target="_blank"><img src="images/insta.webp" class="icons" alt="Instagram" /></a>
+      </div>
+    
+    </section>
+      <p class="only-samsung">made by <a href="quote.html"  style="text-decoration: underline; color: rgb(0, 38, 255) !important;">jason</a></p>
+  </section>
+</main>
+  <!-- Main JS -->
+  <script src="js files/key.js"></script>
+  
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // List of browsers known to force dark mode unchangeably (2025)
+    const blacklist = [
+      "SamsungBrowser",
+      "UCBrowser",
+    ];
+
+    const userAgent = navigator.userAgent;
+
+    const isBlacklisted = blacklist.some(browser => userAgent.includes(browser));
+
+    if (isBlacklisted) {
+      document.getElementById("darkModeWarning").style.display = "block";
+    }
+  });
+</script>
+
+<script>
+ if (navigator.userAgent.includes("SamsungBrowser")) {
+  document.documentElement.classList.add("samsung");
+ }
+</script>
+</body>
+</html>

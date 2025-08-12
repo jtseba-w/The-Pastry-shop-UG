@@ -1,0 +1,111 @@
+/* Section container */
+#sec4 {
+  background-color: #ffc16f;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #18150d;
+  font-family: "Delius Swash Caps", cursive;
+}
+
+/* Headings */
+#sec4 #h14 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  margin-bottom: 10px;
+}
+
+#sec4 #p4 {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+/* Wrapper for all image blocks */
+.image-caption-section4 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+/* Each block: row on mobile */
+.image-block4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+/* The twist: second block reverses image and text on mobile */
+.image-block4.twist4 {
+  flex-direction: row-reverse;
+}
+
+/* Image styling */
+.image-block4 img {
+  width: 45%;
+  max-width: 160px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Caption styling */
+.caption4 {
+  background-color: #ffdaaa;
+  padding: 10px;
+  border-radius: 10px;
+  color: #333;
+  border: 1px solid rgb(104, 104, 104);
+  flex: 1;
+}
+
+.caption4 h2 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  color: #222;
+}
+
+.caption4 p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Desktop layout override */
+@media (min-width: 768px) {
+  .image-caption-section4 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .image-block4 {
+    flex-direction: column !important; /* force stacked */
+    text-align: center;
+    width: 30%;
+    gap: 15px;
+  }
+
+  /* Disable the twist reversal on desktop */
+  .image-block4.twist4 {
+    flex-direction: column !important;
+  }
+
+  .image-block4 img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .caption4 {
+    max-width: 100%;
+  }
+}
