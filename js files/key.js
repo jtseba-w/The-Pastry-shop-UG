@@ -99,3 +99,12 @@ document.addEventListener("DOMContentLoaded", function () {
     allowTouchMove: !isIPad // ⬅ Disable swiping if iPad
   });
 });
+  document.querySelectorAll(".hhh").forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault(); // stop instant navigation
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location = this.href; // go to target after fade
+        }, 800); // matches CSS transition time
+      });
+    });

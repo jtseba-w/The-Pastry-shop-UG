@@ -42,7 +42,7 @@
 .card2 {
   flex: 0 0 70%;
   margin: 0 15px;
-  height: 75px;
+  height: 50%;
   background: #ffebd2 !important;
   border-radius: 20px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
@@ -52,7 +52,12 @@
   justify-content: center;
   align-items: center;
   color: #221e13 !important;
+  padding:10px;
 }
+
+
+
+
 
 .arrow2 {
   position: absolute;

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Pastry Shop</title>
   <!--icon for the site-->
-  <link rel="icon" type="image/webp" href="images/logo-white (3).webp" />
+  <link rel="icon" type="image/png" href="images/page-logo.png" />
 
   <!-- Section Styles -->
   <!-- Tag: css files/ -->
@@ -42,17 +42,25 @@
     #section1{
   background-image: url("images/background-cake-A.webp");
 }
+.moving-cards{
+    border: 10px solid #ffc16f;
+}
   </style>
 </head>
 
 <body>
+  <section class="centered-section">
+      <a href="index.html">
+  <img src="images/regular logo.png" alt="Chocolate"></a>
+</section>
   <div id="darkModeWarning" >
     ⚠️ Your browser may force dark mode ,which drastically changes how this site looks.<br>
     Please re-eopen this page in another browser.
 </div>
   <!-- Fake loading screen -->
   <div id="fakeLoader"></div>
-  
+
+  </div>
   <div class="topbar">
   <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
     <span></span>
@@ -60,16 +68,12 @@
     <span></span>
     
   </div>
-  <div id="order-now" >
-    <a href="call.html" style="color: #000000; text-decoration: none; font-weight: bold;" >
-      order now
-    </a>
-  </div> 
+
 </div>
   <nav id="nav-menu" aria-hidden="true">
 
     <a href="">.</a>
-    <a href="index.html" tabindex="-1">Home</a>
+    <a href="index.html" tabindex="-1" class="highlighted">Home</a>
     <a href="flavours.html" tabindex="-1">Flavours</a>
     <a href="image_library.html" tabindex="-1">Image Library</a>
     <a href="call.html" tabindex="-1">Order</a>
@@ -109,7 +113,8 @@
     </div>
     <div class="dots2" id="dotsContainer2"></div>
     <div class="label2" id="cardLabel2"></div>
-    <p>Fruit cakes of 1.5 kilograms will cost <strong>150,000 Ugx</strong></p>
+    <p>Weight <strong>doesn't</strong> determine the size of the cake </p>
+
     <script>
       const track2 = document.getElementById('swiperTrack2');
       const cards2 = document.querySelectorAll('.card2');
@@ -273,8 +278,7 @@
     </section>
 
     <div id="logos">
-      <img src="images/logo-white (3).webp" id="logo" alt="logo" />
-      <h3>The Pastry Shop</h3>
+      <img src="images/regular logo.png" id="logo" alt="logo" />
     </div>
 
     <section id="footer-icons">

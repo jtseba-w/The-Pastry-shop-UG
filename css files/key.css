@@ -42,6 +42,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: opacity 0.5s ease;
+
 }
 
 #fakeLoader::after {
@@ -64,13 +65,15 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+width: 100vw;
   background: #ff8e5a;
-  padding: 12px 20px;
+  padding: 3px 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 1200;
   display: flex;
   align-items: center;
+  height: 55px;
+
 }
 
 .hamburger {
@@ -105,7 +108,7 @@ nav {
   position: fixed;
   left: 0;
   padding: 5px 0 10px;
-  width: 100vw;
+  width: 93vw;
   background: #ffae44;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
@@ -117,11 +120,13 @@ nav {
   color: #000;
   font-family: "Varela Round", arial;
   text-align: left;
+    border-bottom-right-radius: 30px;  /* round bottom-right */
 }
 
 nav.show {
   transform: translateX(0);
   color: #18150d;
+
 }
 
 nav a {
@@ -129,7 +134,10 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   padding: 10px 20px;
-  font-size: 1.2rem;
+  font-size: 1.2rem;  
+  border-top-right-radius: 30px;     /* round top-right */
+  border-bottom-right-radius: 30px;  /* round bottom-right */
+      margin-right: 100px;
 }
 
 nav a:hover {
@@ -182,9 +190,34 @@ main {
   text-align: center;
 }
 
+
 #order-now:hover {
   background-color: #3a3a3a59 !important;
   cursor: grab;
+}
+.centered-section a{
+
+  width: 100%;
+  height: 50px;               /* section height, change as needed */
+  display: flex;
+  justify-content: center;     /* center horizontally */
+  align-items: center;         /* center vertically */
+   /* optional background for visibility */
+  position: absolute;
+
+}
+
+.centered-section img {
+    z-index: 5000;
+    position: fixed;
+  height: 50px;               /* fixed height for the image */
+  width: auto;                 /* keep aspect ratio */
+ margin-left: 40px;
+}
+
+.highlighted{
+  background-color: #ffe5a0;
+
 }
 
 #darkModeWarning {

@@ -1,6 +1,8 @@
 .moving-cards {
   background-color: #ff8e61;
   font-family: "Delius Swash Caps", cursive;
+  border-radius: 30px;
+  border: 10px solid #ffd561;
 }
 
 .card-wrapper {
@@ -11,6 +13,7 @@
   height: 75vh;
   overflow: hidden;
   box-sizing: border-box;
+  border-radius: 20px;
 }
 
 /* Gradient overlay: transparent edges, dark center */
@@ -21,6 +24,8 @@
   background-color: rgba(0, 0, 0, 0.158);
   z-index: 3;
   pointer-events: none;
+
+
 }
 
 .moving-cards-text {
