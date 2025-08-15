@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Library</title>
 
-    <link rel="stylesheet" href="css files/sec7.css">
       <link href="css files/key.css" rel="stylesheet" />
   <link rel="stylesheet" href="css files/image-background.css">
 
@@ -16,7 +15,7 @@
 
 <style>
     .img-background {
-      background-image: url(images/img-lib-bcg.jpg);
+      background-image: url(images/img-lib-bcg.webp);
     }
     
 #Cg{
@@ -25,7 +24,7 @@
     font-size: 6em;
 }
    body, html {
-      height: 100%;
+
       margin: 0;
     background: #ffc16f !important;
 
@@ -64,15 +63,17 @@
       object-fit: cover;
       display: block;
     }
-
+.topbar{
+  height: 77px;
+}
     /* Overlay text */
     .caption {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 10px;
-      background: rgba(0, 0, 0, 0.26);
+      padding: 5px;
+      background: rgba(0, 0, 0, 0.623);
       color: #fff;
   backdrop-filter: blur(2px);
       font-size: 1.1rem;
@@ -97,13 +98,7 @@
       border-color: #ffc16f;
     }
 </style>
-<link rel="preload" as="image" href="images/grand celebration cakes/20241207_131512.webp" />
-
-<link rel="preload" as="image" href="images/custom cakes/IMG_20220306_220305_019.webp" />
-<link rel="preload" as="image" href="images/cartoon inspired cakes/IMG_20240723_082127_941.webp" />
-<link rel="preload" as="image" href="images/regular cakes/20241110_070918.webp" />
-<link rel="preload" as="image" href="images/momentus celebration cakes/20250117_101719.webp" />
-<link rel="preload" as="image" href="images/grand celebration cakes/IMG_20230126_213310_459.webp" />
+>
  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FW0N50KVK2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -112,11 +107,12 @@
     gtag('config', 'G-FW0N50KVK2');
   </script>
 </head>
-<body>
+
   <section class="centered-section">
       <a href="index.html">
   <img src="images/regular logo.png" alt="Chocolate"></a>
 </section>
+<body>
  <div id="fakeLoader"></div>
       <div class="topbar">
   <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
@@ -142,54 +138,60 @@
   <div class="overlay" id="overlay"></div>
 
   <main>
-  
+    <!-- Section 1 -->
   <section id="section1"  class="lazy-load-section img-background"  id="my-section">
     <div class="container text-center mt-4">
 
-      <h1 id="title">Image Library </h1>
+      <h1 id="title"> Image Library </h1>
 
       <a href="call.html">
-      <button type="button" class="btn btn-dark" id="order">Order Now</button>
+      <button type="button" class="btn btn-dark" id="order">Home Page</button>
       </a>
 
     </div>
   </section>
+
   <p class="title-with-line">click an image</p>
   <span>
   <section style="min-height: 50vh;">
     <div class="center-viewport" style="margin-top: 20px;">
     <div class="image-row">
-        <a href="G.C.C.html">
+        <a href="Grand Event Cakes.html">
       <div class="image-card">
         <img src="images/20250810_230855.webp" alt="Image 1">
-        <div class="caption">Grand Celebration cakes</div>
+        <div class="caption">Grand Event Cakes</div>
       </div>
       </a>
-      <a href="S.C.html">
+      <a href="Two-teired cakes.Html">
       <div class="image-card">
-        <img src="images/20250810_231256.webp" alt="Image 2">
-        <div class="caption">Sensational Cakes</div>
+        <img src="images/20250810_231127.webp" alt="Image 2">
+        <div class="caption">Two-teired cakes</div>
       </div>
       </a>
-        <a href="C.I.C.html">
+        <a href="Chararcter-inspired Cakes.html">
       <div class="image-card">
         <img src="images/20250810_231537.webp" alt="Image 3">
-        <div class="caption">Chararcter inspired cakes</div>
+        <div class="caption">Chararcter-inspired Cakes</div>
       </div>
         </a>
-         <a href="M.C.C.Html">
+         <a href="Fondant Cakes.html">
       <div class="image-card">
-        <img src="images/20250810_231127.webp" alt="Image 3">
-        <div class="caption">Momentous Celebtatory Cakes</div>
+        <img src="images/20250815_162730.webp" alt="Image 3">
+        <div class="caption">Fondant Cakes</div>
       </div>
         </a>
-        <a href="C.C.html">
+        <a href="Whipped cream Cakes.html">
+      <div class="image-card">
+        <img src="images/20250815_152256.webp" alt="Image 3">
+        <div class="caption">Whipped cream Cakes</div>
+      </div>
+        </a>
+             <a href="Custom Cakes.html">
       <div class="image-card">
         <img src="images/20250810_231415.webp" alt="Image 3">
         <div class="caption">Custom Cakes</div>
       </div>
         </a>
-       
         
     </div>
   </div>

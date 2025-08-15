@@ -158,8 +158,14 @@ main {
   nav.show + main {
     margin-left: 220px;
   }
-}
 
+}
+@media (max-height: 450px){
+  nav a{
+   padding: 0px 20px; 
+  } 
+  
+}
 .overlay {
   position: fixed;
   top: 0;
@@ -213,6 +219,8 @@ main {
   height: 50px;               /* fixed height for the image */
   width: auto;                 /* keep aspect ratio */
  margin-left: 40px;
+ margin-top: 0px !important;
+ padding-top: 0px !important;
 }
 
 .highlighted{
@@ -273,7 +281,7 @@ body .title-with-line {
   text-align: center;
   font-family: "Delius Swash Caps", cursive;
   font-size: 1.5em;
-  margin-top: 20px;
+
 }
 
 .title-with-line::after {

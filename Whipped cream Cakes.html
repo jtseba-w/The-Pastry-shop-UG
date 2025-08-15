@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Pastry Shop UG - G.C.C</title>
-  <link rel="icon" type="image/png" href="images/page-logo.png" />
+
   <!-- External Stylesheets -->
   <link rel="stylesheet" href="css files/key.css" />
   <link rel="stylesheet" href="css files/image-background.css" />
@@ -13,8 +13,10 @@
   <link rel="stylesheet" href="css files/image_library.css" />
   <!-- Bootstrap CSS for responsive design and buttons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
- 
+  <link rel="icon" type="image/png" href="images/page-logo.png" />
   <!-- Inline Styles -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+ 
   <style>
     /* Set background color for the entire page */
     html {
@@ -23,15 +25,15 @@
 
     /* Hero section background image */
     #section1 {
-      background-image: url("images/custom cakes/IMG_20220306_220305_019.webp");
+      background-image: url("images/regular cakes/20240806_084538.webp");
     }
   </style>
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FW0N50KVK2"></script>
-  <script>
+  <link rel="preload" as="image" href="images/regular cakes/20241031_081815.webp" />
+   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-FW0N50KVK2');
+    gtag('config', 'G-XXXXXXXXXX');
   </script>
 </head>
 
@@ -50,6 +52,7 @@
       <span></span>
     </div>
 
+
   </div>
 
   <!-- Navigation Menu -->
@@ -60,6 +63,7 @@
     <a href="flavours.html" tabindex="-1">Flavours</a>
     <a href="image_library.html" tabindex="-1">Image Library</a>
     <a href="call.html" tabindex="-1">Order</a>
+
   </nav>
 
   <!-- Overlay for dimming background when menu is open -->
@@ -69,7 +73,7 @@
     <!-- Hero Section with title and navigation back to image library -->
     <section id="section1" class="img-background">
       <div class="container text-center mt-4">
-        <h1 id="title">Custom Creations</h1>
+        <h1 id="title">Delicate Delights</h1>
         <a href="image_library.html">
           <button type="button" class="clear-button" id="order">&#8249;&#8249;&#8249;Image Library</button>
         </a>
@@ -83,17 +87,37 @@
     <section class="image-section">
       <div class="gallery">
         <!-- Gallery images -->
-        <span><img src="images/custom cakes/IMG_20210629_221000_870.webp" alt="" /></span>
-        <span><img src="images/custom cakes/IMG_20220306_220305_019.webp" alt="" /></span>
-        <span><img src="images/custom cakes/IMG_20231031_200600_347.webp" alt="" /></span>
-        <span><img src="images/cartoon inspired cakes/IMG_20230605_111045_156.webp" alt="" /></span>
-        <span><img src="images/custom cakes/IMG_20221020_161657_022.webp" alt="" /></span>
-        <span><img src="images/custom cakes/IMG_20240207_125552_953.webp" alt="" /></span>
-        <span><img src="images/custom cakes/IMG_20231031_200600_347.webp" alt="" /></span>
-        <span><img src="images/momentus celebration cakes/IMG_20240125_003541_785.webp" alt="" /></span>
-
-
-      </div>
+        <span><img src="images/regular cakes/20240525_084248.webp"></span>
+        <span><img src="images/regular cakes/20240806_084538.webp"></span>
+        <span><img src="images/regular cakes/20240823_162351.webp"></span>
+        <span><img src="images/regular cakes/20240824_103914.webp"></span>
+        <span><img src="images/regular cakes/20241007_163816.webp"></span>
+        <span><img src="images/regular cakes/20250426_082549.webp"></span>
+        <span><img src="images/regular cakes/20250427_080418.webp"></span>
+        <span><img src="images/regular cakes/20250524_085009.webp"></span>
+        <span><img src="images/regular cakes/20250606_154411.webp"></span>
+        <span><img src="images/regular cakes/20250607_104851.webp"></span>
+        <span><img src="images/regular cakes/20250607_110626.webp"></span>
+        <span><img src="images/regular cakes/20250629_082251 (1).webp"></span>
+        <span><img src="images/regular cakes/20250701_132510.webp"></span>
+        <span><img src="images/regular cakes/20250706_081342.webp"></span>
+        <span><img src="images/regular cakes/20250726_092950.webp"></span>
+        <span><img src="images/regular cakes/20250731_085343.webp"></span>
+        <span><img src="images/regular cakes/20250801_095056.webp"></span>
+        <span><img src="images/regular cakes/20250808_054806.webp"></span>
+        <span><img src="images/regular cakes/IMG_20230929_100801_226.webp"></span>
+        <span><img src="images/regular cakes/IMG_20231106_123310_697.webp"></span>
+        <span><img src="images/regular cakes/IMG_20240209_205813_778.webp"></span>
+     </div>
+     <p class="title-with-line">Buttercream Cakes</p>
+     <div class="gallery">
+      <span><img src="images/regular cakes/IMG_20240503_080422_959.webp"></span>
+      <span><img src="images/regular cakes/20230425_095807.webp"></span>
+      <span><img src="images/regular cakes/20230828_231907.webp"></span>
+      <span><img src="images/regular cakes/20240329_164122.webp"></span>
+      <span><img src="images/regular cakes/IMG_20220210_190859_192.webp"></span>
+      <span><img src="images/regular cakes/IMG_20220329_170502_554.webp"></span>
+    </div>
 
       <!-- Lightbox for image preview -->
       <div class="lightbox" id="lightbox">
@@ -109,7 +133,7 @@
         <img id="lightbox-img" src="" alt="" />
       </div>
     </section>
-<p class="title-with-line">last updated 11/8/2025</p>
+<p class="title-with-line"></p>
     <!-- Footer Section -->
     <section id="footer" class="lazy-load-section">
       <h1><strong>Call now!</strong></h1>
