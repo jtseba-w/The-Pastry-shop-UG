@@ -141,7 +141,7 @@ nav a {
 }
 
 nav a:hover {
-  background: #ffd68a;
+  background: #ffd35a;
 }
 
 
@@ -188,16 +188,7 @@ main {
   pointer-events: all;
 }
 
-#order-now {
-  margin-left: 40vw;
-  font-family: "Varela Round", sans-serif;
-  color: #18150d;
-  text-decoration: none;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 30px;
-  padding: 5px 15px;
-  text-align: center;
-}
+
 
 
 #order-now:hover {
@@ -227,7 +218,7 @@ main {
 }
 
 .highlighted{
-  background-color: #ffe5a0;
+  background-color: #ffe396;
 
 }
 
@@ -301,4 +292,104 @@ body .title-with-line {
 }
 html.samsung .only-samsung {
   display: block; /* shown only on Samsung Internet */
+}
+
+.btn {
+  position: relative;
+  padding: 5px 20px;
+  font-size: 1.1rem;
+  font-family:"Varela Round", arial;
+  color: #fff !important;
+background-color: none;
+  
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  border-radius: 30px ;
+}
+#footer  .btn{
+   font-size: .9rem;
+  background: #000000;
+
+}
+.neon-pulse {
+  background: #313131 ;
+  border: 2px solid #00000060 ;
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: visible;
+}
+
+.neon-pulse::before,
+.neon-pulse::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border: 2px solid #ffffff9a;
+  border-radius: inherit;
+  animation: pulseOut 2s ease-out infinite;
+  opacity: 0;
+}
+
+.neon-pulse::after {
+  animation-delay: .5s;
+}
+
+@keyframes pulseOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+#nav-menu a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.spinner {
+  display: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ffeece;
+  border-top-color: #944700;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Show spinner on hover for mouse users */
+@media (hover: hover) {
+  #nav-menu a:hover .spinner {
+    display: inline-block;
+  }
+}
+
+/* Show spinner on tap/click for no-mouse devices */
+@media (hover: none) {
+  #nav-menu a:active .spinner,
+  #nav-menu a:focus .spinner {
+    display: inline-block;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .spinner{
+    opacity: 0;
+  }
 }

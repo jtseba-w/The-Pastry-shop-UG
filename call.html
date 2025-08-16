@@ -129,7 +129,7 @@ select:focus {
 <body>
     <section class="centered-section">
       <a href="index.html">
-  <img src="images/regular logo.png" alt="Chocolate"></a>
+  <img src="images/regular logo.png" alt=""></a>
 </section>
   <div class="topbar">
   <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
@@ -139,14 +139,12 @@ select:focus {
   </div>
 </div>
   <nav id="nav-menu" aria-hidden="true">
-     <a href="index.html" tabindex="-1">.</a>
-    <a href="index.html" tabindex="-1">Home</a>
-
-    <a href="flavours.html" tabindex="-1">Flavours</a>
-        <a href="image_library.html" tabindex="-1">Image Library</a>
-            <a href="call.html" tabindex="-1" class="highlighted">Order</a>
-
-  </nav>
+    <a href="">.<span class="spinner"></span></a>
+    <a href="index.html" tabindex="-1">Home<span class="spinner"></span></a>
+    <a href="flavours.html" tabindex="-1">Flavours<span class="spinner"></span></a>
+    <a href="image_library.html" tabindex="-1">Image Library<span class="spinner"></span></a>
+    <a href="call.html" tabindex="-1"  class="highlighted">Order<span class="spinner"></span></a>
+</nav>
 
   <div class="overlay" id="overlay"></div>
 
@@ -249,7 +247,7 @@ select:focus {
   <div id="extraSection" style="  max-height: 0; overflow: hidden; transition: max-height 2s ease; margin-top: 20px;">
    <section id="sec82">
     <h1><strong>Design</strong></h1>
-    <p>Ask yourself...</p>
+    <p>Think about...</p>
     <div class="swiper-container82">
       <button class="arrow82 arrow-left82" id="arrowLeft82">&#8249;</button>
       <div class="swiper-track82" id="swiperTrack82">

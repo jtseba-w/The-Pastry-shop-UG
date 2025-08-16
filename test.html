@@ -5,28 +5,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fade Out on Navigation</title>
 <style>
-.top-section {
-  width: 100%;
-  height: 200px;               /* height of your top section */
-  display: flex;
-  justify-content: center;     /* center horizontally */
-  align-items: center;         /* center vertically inside the section */
-  background-color: #f8f8f8;   /* optional background */
+.loading-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
 }
 
-.top-section img {
-  height: 100px;               /* fixed height for the image */
-  width: auto;                 /* keep aspect ratio */
-  display: block;
+.spinner {
+  display: none; /* hidden by default */
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Only show for devices with no mouse (hover: none) */
+@media (hover: none) {
+  .loading-link:active .spinner,
+  .loading-link:focus .spinner {
+    display: inline-block;
+  }
+}
+
+
+
+body{
+  background-color: aqua;
 }
 
 
 </style>
 </head>
 <body>
-<section class="top-section">
-  <img src="images/Chocolate.webp" alt="Chocolate">
-</section>
+<a href="#" class="loading-link">Tap Me<span class="spinner"></span></a>
+
+
+
+
 
 </body>
 </html>
