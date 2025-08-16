@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Library</title>
 
+    <link rel="stylesheet" href="css files/sec7.css">
       <link href="css files/key.css" rel="stylesheet" />
   <link rel="stylesheet" href="css files/image-background.css">
 
@@ -15,7 +16,7 @@
 
 <style>
     .img-background {
-      background-image: url(images/img-lib-bcg.webp);
+      background-image: url(images/img-lib-bcg.jpg);
     }
     
 #Cg{
@@ -24,7 +25,7 @@
     font-size: 6em;
 }
    body, html {
-
+      height: 100%;
       margin: 0;
     background: #ffc16f !important;
 
@@ -63,9 +64,7 @@
       object-fit: cover;
       display: block;
     }
-.topbar{
-  height: 77px;
-}
+
     /* Overlay text */
     .caption {
       position: absolute;
@@ -73,7 +72,7 @@
       left: 0;
       right: 0;
       padding: 5px;
-      background: rgba(0, 0, 0, 0.623);
+      background: rgba(0, 0, 0, 0.514);
       color: #fff;
   backdrop-filter: blur(2px);
       font-size: 1.1rem;
@@ -97,8 +96,12 @@
     .moving-cards{
       border-color: #ffc16f;
     }
+    .img-background{
+      background-image: url(images/img-lib-bcg.webp);
+    }
 </style>
->
+<link rel="preload" as="image" href="images/img-lib-bcg.webp" />
+
  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FW0N50KVK2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -107,12 +110,11 @@
     gtag('config', 'G-FW0N50KVK2');
   </script>
 </head>
-
+<body>
   <section class="centered-section">
       <a href="index.html">
   <img src="images/regular logo.png" alt="Chocolate"></a>
 </section>
-<body>
  <div id="fakeLoader"></div>
       <div class="topbar">
   <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
@@ -138,11 +140,11 @@
   <div class="overlay" id="overlay"></div>
 
   <main>
-    <!-- Section 1 -->
+  
   <section id="section1"  class="lazy-load-section img-background"  id="my-section">
     <div class="container text-center mt-4">
 
-      <h1 id="title"> Image Library </h1>
+      <h1 id="title">Image Library </h1>
 
       <a href="call.html">
       <button type="button" class="btn btn-dark" id="order">Home Page</button>
@@ -150,7 +152,6 @@
 
     </div>
   </section>
-
   <p class="title-with-line">click an image</p>
   <span>
   <section style="min-height: 50vh;">
@@ -165,28 +166,28 @@
       <a href="Two-teired cakes.Html">
       <div class="image-card">
         <img src="images/20250810_231127.webp" alt="Image 2">
-        <div class="caption">Two-teired cakes</div>
+        <div class="caption">Two-teired Cakes</div>
       </div>
       </a>
         <a href="Chararcter-inspired Cakes.html">
       <div class="image-card">
         <img src="images/20250810_231537.webp" alt="Image 3">
-        <div class="caption">Chararcter-inspired Cakes</div>
+        <div class="caption">Chararcter inspired cakes</div>
       </div>
         </a>
-         <a href="Fondant Cakes.html">
+         <a href="Whipped cream Cakes.html">
+      <div class="image-card">
+        <img src="images/20250815_152256.webp" alt="Image 3">
+        <div class="caption">Whipped-cream Cakes</div>
+      </div>
+        </a>
+        <a href="Fondant Cakes.html">
       <div class="image-card">
         <img src="images/20250815_162730.webp" alt="Image 3">
         <div class="caption">Fondant Cakes</div>
       </div>
         </a>
-        <a href="Whipped cream Cakes.html">
-      <div class="image-card">
-        <img src="images/20250815_152256.webp" alt="Image 3">
-        <div class="caption">Whipped cream Cakes</div>
-      </div>
-        </a>
-             <a href="Custom Cakes.html">
+       <a href="Custom Cakes.html">
       <div class="image-card">
         <img src="images/20250810_231415.webp" alt="Image 3">
         <div class="caption">Custom Cakes</div>

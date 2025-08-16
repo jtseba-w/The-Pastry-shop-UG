@@ -164,6 +164,9 @@ main {
   nav a{
    padding: 0px 20px; 
   } 
+  nav{
+    padding-top: 20px;
+  }
   
 }
 .overlay {
