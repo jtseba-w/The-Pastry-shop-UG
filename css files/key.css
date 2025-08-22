@@ -393,3 +393,12 @@ background-color: none;
     opacity: 0;
   }
 }
+.h6{
+  font-family: "Delius Swash Caps", cursive;
+  color: black;
+  padding-top: 10px;
+  padding-left: 5px;
+  font-size: 1.2em;
+  font-weight: 600;
+
+}
